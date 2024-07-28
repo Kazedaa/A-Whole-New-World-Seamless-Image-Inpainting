@@ -47,6 +47,6 @@ conda activate img_inpaint
 pip install -r requirements.txt
 ```
 2. **Run App"
-   ```bash
+ ```bash
    python app.py
-  ```
+ ```
