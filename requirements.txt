@@ -1,0 +1,6 @@
+Flask==3.0.3
+Pillow==10.4.0
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.1+cu118 
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torchvision==0.17.1+cu118

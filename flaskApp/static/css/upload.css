@@ -1,0 +1,15 @@
+#image{
+  width :128px;
+  height:128px;
+  margin:auto;
+  margin-bottom: 10px;
+}
+
+#patch{
+  position :absolute;
+  cursor: move;
+  width:64px;
+  height:64px;
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+}

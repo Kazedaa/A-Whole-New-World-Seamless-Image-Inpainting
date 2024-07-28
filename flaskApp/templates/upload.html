@@ -1,0 +1,20 @@
+{%extends 'base.html' %}
+
+{%block head%}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/upload.css')}}"/>
+{%endblock%}
+
+{%block body%}
+
+<div>
+    <div id="image">
+        <div name = "mask" id="patch"></div>
+        <img id ="sample" src="{{url_for('main.display_image',filename=filename)}}" alt="Uploaded Image">
+    </div>
+    <input type="submit" value="Inpaint!" id="Inpaint" class="btn btn-primary" onclick="send_data()">
+</div>
+
+<script src="{{url_for('static',filename='js/draggable.js')}}"></script>
+<script src="{{url_for('static',filename='js/get_cords.js')}}"></script>
+
+{%endblock%}

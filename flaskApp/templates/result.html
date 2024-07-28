@@ -1,0 +1,32 @@
+{%extends 'base.html' %}
+
+
+{%block head%}
+<style>
+    #result{
+        width :128px;
+        height:128px;
+        }
+    #container{
+        margin:10px;
+        display : inline-block;
+        width : 150px;
+    }
+    h2 {
+        color:black;
+        width:128px;
+    }
+</style>
+{%endblock%}
+
+
+{%block body%}
+
+    <div id="container"><h2>Original</h2><img id="result" src="{{url_for('main.display_image',filename=filename)}}" alt="Uploaded Image"></div>
+    <div id="container"><h2>Masked</h2><img id="result" src="{{url_for('main.masked',filename=filename)}}" alt="Uploaded Image"></div>
+    <div id="container"><h2>Inpainted</h2><img id="result" src="{{url_for('main.inpainted',filename=filename)}}" alt="Uploaded Image"></div>
+    <form action="\redirect" method=" POST " enctype="multipart/form-data">
+        <input class="btn btn-primary" type="submit" id="Home"value="Home" onclick="home()">
+    </form>
+    
+{%endblock%}
