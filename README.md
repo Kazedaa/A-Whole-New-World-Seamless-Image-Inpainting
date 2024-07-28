@@ -40,13 +40,13 @@ And can be accessed here.
 ![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/2faa5b4f-208d-4663-a1b5-7dfc0b33e398)![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/02013534-3f5f-47ae-8323-d0523f1af256)
 
 ## Install
-1. **Get Dependencies"
+1. **Get Dependencies**
 ```bash
 conda create -n img_inpaint python=3.8
 conda activate img_inpaint
 pip install -r app_requirements.txt
 ```
-2. **Run App"
+2. **Run App**
  ```bash
    python app.py
  ```
