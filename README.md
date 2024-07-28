@@ -6,7 +6,7 @@ Image inpainting is a computer vision task that involves filling in missing or d
 ## Methodology
 
 ### Dataset Preparation:
-The CelebA dataset consists of images with various resolutions and annotations such as facial keypoints and attributes.
+The CelebA dataset consists of images with various resolutions and annotations such as facial key points and attributes.
 We preprocess the dataset to extract the images and masks indicating the regions to be inpainted.
 
 ### Model Architecture:
@@ -26,35 +26,27 @@ Qualitatively, we visually inspect the inpainted images to assess the quality an
 To make the trained model accessible and user-friendly, we develop a Flask-based website for hosting the image inpainting service.
 
 #### Frontend:
-The frontend of the website allows users to upload images with missing regions.
+The front end of the website allows users to upload images with missing regions.
 Users can specify the areas to be inpainted or allow the model to automatically detect and inpaint missing regions.
 #### Backend:
 The backend of the website integrates the trained PatchGAN model for inpainting.
 Upon receiving an image, the backend processes it through the model and returns the inpainted result to the user.
 #### Deployment:
-We deploy the Flask website on a web server to make it accessible over the internet.
-Users can access the website through a web browser and utilize the image inpainting service.
+We deploy the Flask website on Vercel.
+And can be accessed here.
 
 ## Results
 ![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/ac4dc3b2-0991-44c1-8d69-2ecd49e10acc)![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/0d35c2ff-3f81-4216-a88e-ca9d1c28c5c5)
 ![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/2faa5b4f-208d-4663-a1b5-7dfc0b33e398)![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/02013534-3f5f-47ae-8323-d0523f1af256)
 
-
-
-## Requirements
-Ensure you have the following dependencies installed:
-- Python 3.x
-- PyTorch
-- NumPy
-- Matplotlib
-- CelebA dataset
-
-## Usage
-1. **Data Preparation**:
-   - Download the CelebA dataset and preprocess as needed.
-   
-2. **Training**:
-   - Train the PatchGAN model on the dataset using the provided training script. Adjust hyperparameters as necessary.
-   
+## Install
+1. **Get Dependencies"
+```bash
+conda create -n img_inpaint python=3.8
+conda activate img_inpaint
+pip install -r requirements.txt
+```
+2. **Run App"
    ```bash
-   python train.py --dataset_path /path/to/celeba/dataset --epochs 50 --batch_size 64
+   python app.py
+  ```
