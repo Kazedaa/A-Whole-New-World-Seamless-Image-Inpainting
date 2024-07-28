@@ -19,6 +19,8 @@ img_size = 128
 mask_size = 64
 # number of image channels
 channels = 3
+#device agnostics
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 #Agmentation
@@ -31,7 +33,7 @@ transforms_ = v2.Compose([
 # Initialize generator
 generator = PatchGan(channels=channels)
 #Load Pretrained Weights
-generator.load_state_dict(torch.load(os.path.join('flaskApp','Patchgenerator.pth')))
+generator.load_state_dict(torch.load(os.path.join('flaskApp','Patchgenerator.pth'), map_location=torch.device(device)))
 
 
 Tensor = torch.FloatTensor

@@ -44,7 +44,7 @@ And can be accessed here.
 ```bash
 conda create -n img_inpaint python=3.8
 conda activate img_inpaint
-pip install -r requirements.txt
+pip install -r app_requirements.txt
 ```
 2. **Run App"
  ```bash
