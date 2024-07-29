@@ -31,9 +31,7 @@ Users can specify the areas to be inpainted or allow the model to automatically 
 #### Backend:
 The backend of the website integrates the trained PatchGAN model for inpainting.
 Upon receiving an image, the backend processes it through the model and returns the inpainted result to the user.
-#### Deployment:
-We deploy the Flask website on Vercel.
-And can be accessed here.
+
 
 ## Results
 ![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/ac4dc3b2-0991-44c1-8d69-2ecd49e10acc)![image](https://github.com/Kazedaa/Image-Inpainting/assets/120291477/0d35c2ff-3f81-4216-a88e-ca9d1c28c5c5)
@@ -50,3 +48,4 @@ pip install -r app_requirements.txt
  ```bash
    python app.py
  ```
+3. ** Use the `Samples` folder to select images to upload
