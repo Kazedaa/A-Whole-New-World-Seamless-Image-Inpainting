@@ -15,7 +15,7 @@ PatchGAN operates by classifying image patches as real or fake, enabling it to g
 
  ### Training:
 The model is trained using a combination of adversarial and reconstruction losses.
-Adversarial loss encourages the generator to produce realistic inpainted images, while reconstruction loss ensures that the inpainted regions match the surrounding context/
+Adversarial loss encourages the generator to produce realistic inpainted images, while reconstruction loss ensures that the inpainted regions match the surrounding context.
 <br>
 [Training Code on Kaggle](https://www.kaggle.com/code/sciencerz/image-inpainting-celeba/settings)
 
