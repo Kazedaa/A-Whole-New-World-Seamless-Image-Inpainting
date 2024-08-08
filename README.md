@@ -1,7 +1,7 @@
 # A Whole New World: Seamless Image Inpainting
 
 
-Image inpainting is a computer vision task that involves filling in missing or damaged parts of an image. It has various applications including photo editing, image restoration, and object removal. The focus of this project is on image inpainting using PatchGAN, a type of Generative Adversarial Network (GAN), on the CelebA dataset, which contains over 200,000 celebrity images.
+Image inpainting is a computer vision task that involves filling in missing or damaged parts of an image. It has various applications including photo editing, image restoration, and object removal. The project focuses on image inpainting using PatchGAN, a type of Generative Adversarial Network (GAN), on the CelebA dataset, which contains over 200,000 celebrity images.
 
 ## Methodology
 
@@ -23,7 +23,7 @@ Quantitatively, we measure metrics such as PSNR (Peak Signal-to-Noise Ratio) and
 Qualitatively, we visually inspect the inpainted images to assess the quality and coherence of the generated content.
 
 ### Hosting
-To make the trained model accessible and user-friendly, we develop a Flask-based website for hosting the image inpainting service.
+To make the trained model accessible and user-friendly, we developed a Flask-based website to host the image inpainting service.
 
 #### Frontend:
 The front end of the website allows users to upload images with missing regions.
