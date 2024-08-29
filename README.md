@@ -1,4 +1,4 @@
-# A Whole New World: Seamless Image Inpainting
+# A Hole New World: Seamless Image Inpainting
 
 
 Image inpainting is a computer vision task that involves filling in missing or damaged parts of an image. It has various applications including photo editing, image restoration, and object removal. The project focuses on image inpainting using PatchGAN, a type of Generative Adversarial Network (GAN), on the CelebA dataset, which contains over 200,000 celebrity images.
